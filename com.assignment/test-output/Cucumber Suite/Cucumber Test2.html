@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 31 13:36:41 IST 2017</td>
+<td>Started on:</td><td>Wed May 31 16:54:04 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>269 seconds (269593 ms)</td>
+<tr><td>Total time:</td><td>180 seconds (180576 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.testrunner.TestRunner.feature()'><b>feature</b><br>Test class: com.testrunner.TestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Login Functionality</td>
-<td><div><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [Incorrect User-ID passowrd. You have]
+<td><div><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [You have entered an incorrect client id/email id/password to access ‘My Account’. You have 4 attempts left, post which, your access will get locked. After 4 attempts, kindly contact us at any of our touch points to unlock your access. You can reset your password using Forgot password option.]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [Incorrect User-ID passowrd. You have]
-	at com.pageobjects.LoginPage.enterLoginDetails(LoginPage.java:29)
-	at com.pagedefinitions.LoginPageStepDefinition.enterLoginDetails(LoginPageStepDefinition.java:18)
-	at ✽.And you enter valid &quot;ashwin&quot; and &quot;karangutkar&quot;(LoginFeature.feature:5)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1647509467", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1647509467'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [Incorrect User-ID passowrd. You have]
+Caused by: java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [You have entered an incorrect client id/email id/password to access ‘My Account’. You have 4 attempts left, post which, your access will get locked. After 4 attempts, kindly contact us at any of our touch points to unlock your access. You can reset your password using Forgot password option.]
+	at com.pageobjects.LoginPage.verifyLogin(LoginPage.java:37)
+	at com.pagedefinitions.LoginPageStepDefinition.check_whether_Login_Details_are_Correct(LoginPageStepDefinition.java:31)
+	at ✽.Then Check whether Login Details are Correct(LoginFeature.feature:7)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace688988404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace688988404'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [You have entered an incorrect client id/email id/password to access ‘My Account’. You have 4 attempts left, post which, your access will get locked. After 4 attempts, kindly contact us at any of our touch points to unlock your access. You can reset your password using Forgot password option.]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -112,19 +112,19 @@ Caused by: java.lang.AssertionError: expected [Incorrect User-ID password. You h
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-Caused by: java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [Incorrect User-ID passowrd. You have]
+Caused by: java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [You have entered an incorrect client id/email id/password to access ‘My Account’. You have 4 attempts left, post which, your access will get locked. After 4 attempts, kindly contact us at any of our touch points to unlock your access. You can reset your password using Forgot password option.]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:189)
 	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.pageobjects.LoginPage.enterLoginDetails(LoginPage.java:29)
-	at com.pagedefinitions.LoginPageStepDefinition.enterLoginDetails(LoginPageStepDefinition.java:18)
-	at ✽.And you enter valid &quot;ashwin&quot; and &quot;karangutkar&quot;(LoginFeature.feature:5)
+	at com.pageobjects.LoginPage.verifyLogin(LoginPage.java:37)
+	at com.pagedefinitions.LoginPageStepDefinition.check_whether_Login_Details_are_Correct(LoginPageStepDefinition.java:31)
+	at ✽.Then Check whether Login Details are Correct(LoginFeature.feature:7)
 </pre></div></td>
-<td>9</td>
-<td>com.testrunner.TestRunner@1ed4004b</td></tr>
+<td>11</td>
+<td>com.testrunner.TestRunner@3159c4b8</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -134,20 +134,20 @@ Caused by: java.lang.AssertionError: expected [Incorrect User-ID password. You h
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.testrunner.TestRunner.feature()'><b>feature</b><br>Test class: com.testrunner.TestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Buy Insurance Functionality</td>
-<td></td>
-<td>177</td>
-<td>com.testrunner.TestRunner@1ed4004b</td></tr>
-<tr>
 <td title='com.testrunner.TestRunner.feature()'><b>feature</b><br>Test class: com.testrunner.TestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: BrokenLink Functionality</td>
 <td></td>
-<td>60</td>
-<td>com.testrunner.TestRunner@1ed4004b</td></tr>
+<td>7</td>
+<td>com.testrunner.TestRunner@3159c4b8</td></tr>
+<tr>
+<td title='com.testrunner.TestRunner.feature()'><b>feature</b><br>Test class: com.testrunner.TestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Buy Insurance Functionality</td>
+<td></td>
+<td>148</td>
+<td>com.testrunner.TestRunner@3159c4b8</td></tr>
 <tr>
 <td title='com.testrunner.TestRunner.feature()'><b>feature</b><br>Test class: com.testrunner.TestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Signup Functionality</td>
 <td></td>
-<td>14</td>
-<td>com.testrunner.TestRunner@1ed4004b</td></tr>
+<td>6</td>
+<td>com.testrunner.TestRunner@3159c4b8</td></tr>
 </table><p>
 </body>
 </html>

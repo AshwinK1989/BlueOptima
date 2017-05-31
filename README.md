@@ -20,3 +20,6 @@ Way to run the project:
 
 9) You can find result in file: index.html which is present in target/html folder.
 
+10) The Broken Link feature will fail too as some links are throwing error Connection refused (Connection refused).
+
+11) The broken links will be printed on the console. The one which is not providing response as OK are marked as failed.

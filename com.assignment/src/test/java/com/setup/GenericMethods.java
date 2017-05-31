@@ -1,12 +1,16 @@
 package com.setup;
 
 import java.net.HttpURLConnection;
+import java.net.ProtocolException;
 import java.net.URL;
 import java.util.ArrayList;
+
+import javax.net.ssl.SSLException;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -40,6 +44,19 @@ public class GenericMethods {
 			driver.findElement(By.cssSelector(sLocator)).click();
 
 		}
+	}
+	
+	public static boolean isAlertPresent(WebDriver driver) 
+	{ 
+	    try 
+	    { 
+	        driver.switchTo().alert(); 
+	        return true; 
+	    }   
+	    catch (NoAlertPresentException Ex) 
+	    { 
+	        return false; 
+	    }   
 	}
 	
 	public static void doubleClick(WebDriver driver, String sLocator, String locatorType) {
@@ -145,13 +162,13 @@ public class GenericMethods {
 	    jse.executeScript("window.scrollBy(0,250)", "");
 	}
 
-	public static void switchToWindow(WebDriver driver) throws InterruptedException  {
+	public static void switchToWindow(WebDriver driver)  {
 		
 		String handle = driver.getWindowHandle();
 
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		tabs.remove(handle);
-		Thread.sleep(3000);
+		waitFor(3000);
 		driver.switchTo().window(tabs.get(0));
 	}
 
@@ -204,11 +221,13 @@ public class GenericMethods {
 	      return response;
 	    }
 
-	    catch (Exception exp)  {
+	    catch (ProtocolException | SSLException exception) {
 
-	      return exp.getMessage ();
+	     System.out.println("could not open " + url);
 
 	    }
+	    
+	    return response;   
 
 }
 }

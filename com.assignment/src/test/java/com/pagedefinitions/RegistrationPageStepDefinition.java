@@ -14,13 +14,15 @@ public class RegistrationPageStepDefinition extends WebSetup {
 	
 	
 	@Given("^You are on Login \"([^\"]*)\" of hdfclife$")
-	public void you_are_on_Login_of_hdfclife(String url) throws Throwable {
+	public void you_are_on_Login_of_hdfclife(String url)  {
 	    rp= new RegistrationPage(getDriver());
 		rp.navigateToLoginPage(url);
 	}
 
 	@Then("^Go to registration page$")
-	public void go_to_registration_page() throws Throwable {
+	public void go_to_registration_page() {
 	   rp.verifySignup();
 	}
+	
+	
 }

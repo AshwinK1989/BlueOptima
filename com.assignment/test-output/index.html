@@ -116,12 +116,12 @@
                     <div class="method-list-content passed suite-Cucumber_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Suite" title="com.testrunner.TestRunner" hash-for-method="feature(Signup Functionality)">feature(Signup Functionality)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Suite" title="com.testrunner.TestRunner" hash-for-method="feature(Buy Insurance Functionality)">feature(Buy Insurance Functionality)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Suite" title="com.testrunner.TestRunner" hash-for-method="feature(Buy Insurance Functionality)">feature(Buy Insurance Functionality)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Suite" title="com.testrunner.TestRunner" hash-for-method="feature(Signup Functionality)">feature(Signup Functionality)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -153,13 +153,13 @@
                   </a> <!-- feature(Login Functionality) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(Login Functionality)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [Incorrect User-ID passowrd. You have]
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [You have entered an incorrect client id/email id/password to access ‘My Account’. You have 4 attempts left, post which, your access will get locked. After 4 attempts, kindly contact us at any of our touch points to unlock your access. You can reset your password using Forgot password option.]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [Incorrect User-ID passowrd. You have]
-	at com.pageobjects.LoginPage.enterLoginDetails(LoginPage.java:29)
-	at com.pagedefinitions.LoginPageStepDefinition.enterLoginDetails(LoginPageStepDefinition.java:18)
-	at ✽.And you enter valid &quot;ashwin&quot; and &quot;karangutkar&quot;(LoginFeature.feature:5)
+Caused by: java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [You have entered an incorrect client id/email id/password to access ‘My Account’. You have 4 attempts left, post which, your access will get locked. After 4 attempts, kindly contact us at any of our touch points to unlock your access. You can reset your password using Forgot password option.]
+	at com.pageobjects.LoginPage.verifyLogin(LoginPage.java:37)
+	at com.pagedefinitions.LoginPageStepDefinition.check_whether_Login_Details_are_Correct(LoginPageStepDefinition.java:31)
+	at ✽.Then Check whether Login Details are Correct(LoginFeature.feature:7)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -176,20 +176,20 @@ Caused by: java.lang.AssertionError: expected [Incorrect User-ID password. You h
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Signup Functionality)">
-                  </a> <!-- feature(Signup Functionality) -->
+                  <a name="feature(Buy Insurance Functionality)">
+                  </a> <!-- feature(Buy Insurance Functionality) -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">(Signup Functionality)</span>
+                  <span class="parameters">(Buy Insurance Functionality)</span>
                   <em>
 (Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Buy Insurance Functionality)">
-                  </a> <!-- feature(Buy Insurance Functionality) -->
+                  <a name="feature(Signup Functionality)">
+                  </a> <!-- feature(Signup Functionality) -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">(Buy Insurance Functionality)</span>
+                  <span class="parameters">(Signup Functionality)</span>
                   <em>
 (Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
@@ -271,24 +271,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'com.testrunner.TestRunner')
-data.setCell(0, 3, 177492);
+data.setCell(0, 3, 148003);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'feature')
 data.setCell(1, 2, 'com.testrunner.TestRunner')
-data.setCell(1, 3, 60464);
+data.setCell(1, 3, 11233);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'feature')
 data.setCell(2, 2, 'com.testrunner.TestRunner')
-data.setCell(2, 3, 14289);
+data.setCell(2, 3, 7350);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'feature')
 data.setCell(3, 2, 'com.testrunner.TestRunner')
-data.setCell(3, 3, 9406);
+data.setCell(3, 3, 6305);
 window.suiteTableData['Cucumber_Suite']= { tableData: data, tableDiv: 'times-div-Cucumber_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Cucumber_Suite">
               </div> <!-- times-div-Cucumber_Suite -->
             </div> <!-- times-div -->
@@ -321,33 +321,33 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeSetup(Chrome)</span>
-                <span class="method-start">242 ms</span>
+                <span class="method-start">239 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">feature(Buy Insurance Functionality)</span>
-                <span class="method-start">2825 ms</span>
+                <span class="method-name">feature(BrokenLink Functionality)</span>
+                <span class="method-start">2610 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">feature(BrokenLink Functionality)</span>
-                <span class="method-start">180318 ms</span>
+                <span class="method-name">feature(Buy Insurance Functionality)</span>
+                <span class="method-start">9961 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(Login Functionality)</span>
-                <span class="method-start">240783 ms</span>
+                <span class="method-start">157965 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">feature(Signup Functionality)</span>
-                <span class="method-start">250191 ms</span>
+                <span class="method-start">169201 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">shutDown(Chrome)</span>
-                <span class="method-start">264495 ms</span>
+                <span class="method-start">175508 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">269568 ms</span>
+                <span class="method-start">180553 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

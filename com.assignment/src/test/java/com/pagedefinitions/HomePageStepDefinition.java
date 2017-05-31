@@ -20,10 +20,12 @@ public class HomePageStepDefinition extends WebSetup {
   }
   
   @Then("^Check whether links are broken$")
-  public void check_whether_links_are_broken() throws Throwable {
+  public void check_whether_links_are_broken()  {
 
     hp.verifyBrokenLinks();
 	  
   }
+  
+ 
 
 }

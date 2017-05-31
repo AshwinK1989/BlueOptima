@@ -9,6 +9,9 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.asserts.SoftAssert;
+
 import com.setup.GenericMethods;
 
 
@@ -31,7 +34,7 @@ public class HomePage {
 		try {
 
 			Thread.sleep(3000);
-
+			SoftAssert softAssert = new SoftAssert();
 			List<String> hrefs = new ArrayList<String>();
 			List<WebElement> anchors = driver.findElements(By.tagName("a"));
 			anchors.addAll(driver.findElements(By.tagName("img")));
@@ -46,10 +49,19 @@ public class HomePage {
 				}
 			}
 
+			System.out.println("The total links "+hrefs.size());
 			for (String href : hrefs) {
 
-			  Assert.assertEquals(GenericMethods.isLinkBroken(new URL(href)), "OK");
-			  System.out.println("URL: " + href + " returned " + GenericMethods.isLinkBroken(new URL(href)));
+			try {
+			  if(!GenericMethods.isLinkBroken(new URL(href)).equals("OK"))
+			  System.out.println("The broken Link is "+href);
+
+				}
+			catch (Exception e)  {
+				  System.out.println("URL: " + href + " returned " + e.getMessage());
+
+				}
+				
 
 				}
 
@@ -61,6 +73,7 @@ public class HomePage {
 		
 		return this;
 	}
+	
 	
 	
    

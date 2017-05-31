@@ -4,10 +4,12 @@ import org.openqa.selenium.WebDriver;
 
 import com.pageobjects.HomePage;
 import com.pageobjects.InsurancePlanPage;
+import com.setup.GenericMethods;
 import com.setup.WebSetup;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 
 public class InsurancePageStepDefinition extends WebSetup {
 	
@@ -23,14 +25,14 @@ public class InsurancePageStepDefinition extends WebSetup {
 	  }
 	
 	 @And("^You fill personal details$")
-	  public void you_fill_personal_details() throws Exception {
+	  public void you_fill_personal_details() {
 	    
 	    lp.fillPersonalDetails();
 	    
 	  }
 	 
 	 @And("^You choose the plan$")
-	  public void you_choose_the_plan() throws Exception {
+	  public void you_choose_the_plan() {
 	    
 	    lp.choosePlan();
 	    
@@ -40,7 +42,8 @@ public class InsurancePageStepDefinition extends WebSetup {
 	  public void you_fill_proposal_form_details() throws Exception {
 	    
 	    lp.fillProposalForm();
-	    Thread.sleep(100000);
 	    
 	  }
+	 
+	
 }

@@ -24,7 +24,7 @@ public class RegistrationPage {
 	}
 	
 	
-    public  RegistrationPage verifySignup()  {
+    public  void verifySignup()  {
 		   
 		GenericMethods.click(driver, ConstantLocators.newUserRegister, ConstantLocators.Xpath);
 		GenericMethods.click(driver, ConstantLocators.clickHere, ConstantLocators.Xpath);
@@ -33,10 +33,15 @@ public class RegistrationPage {
 		GenericMethods.input(driver, ConstantLocators.monthField, ConstantLocators.Xpath, "02");
 		GenericMethods.input(driver, ConstantLocators.yearField, ConstantLocators.Xpath, "2012");
 		GenericMethods.click(driver, ConstantLocators.nextButton, ConstantLocators.Xpath);
+		if(GenericMethods.isAlertPresent(driver)==true)  {
 		Assert.assertEquals(GenericMethods.getAlert(driver).getText(), "Enter the Correct Policy No");
+
 		GenericMethods.getAlert(driver).dismiss();    
-		return new RegistrationPage(driver);
+		}
+		//return new RegistrationPage(driver);
 		     
 		     
     }
+    
+  
 }

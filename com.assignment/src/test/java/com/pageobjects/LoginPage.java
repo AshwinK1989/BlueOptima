@@ -26,7 +26,6 @@ public class LoginPage {
 		GenericMethods.input(driver, ConstantLocators.userName, ConstantLocators.Xpath, userName);
 		GenericMethods.input(driver, ConstantLocators.password, ConstantLocators.Xpath, password);
         GenericMethods.click(driver, ConstantLocators.loginButton, ConstantLocators.Xpath);
-        Assert.assertEquals(GenericMethods.getText(driver, ConstantLocators.loginErrorMessage, ConstantLocators.Xpath), "Incorrect User-ID password. You have");
 	}
    
       public void clickOnLoginButton() {
@@ -38,6 +37,12 @@ public class LoginPage {
           Assert.assertEquals(GenericMethods.getText(driver, ConstantLocators.loginErrorMessage, ConstantLocators.Xpath), "Incorrect User-ID password. You have");
 
       }
+      
+      public void closeApplication()  {
+ 		 
+ 		 driver.quit();
+ 	 
+ 	 }
    
    
 }

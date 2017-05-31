@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Cucumber Suite" duration-ms="269593" started-at="2017-05-31T08:06:41Z" finished-at="2017-05-31T08:11:10Z">
+  <suite name="Cucumber Suite" duration-ms="180576" started-at="2017-05-31T11:24:04Z" finished-at="2017-05-31T11:27:04Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@1ed4004b]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@3159c4b8]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Cucumber Test2" duration-ms="269593" started-at="2017-05-31T08:06:41Z" finished-at="2017-05-31T08:11:10Z">
+    <test name="Cucumber Test2" duration-ms="180576" started-at="2017-05-31T11:24:04Z" finished-at="2017-05-31T11:27:04Z">
       <class name="com.testrunner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testrunner.TestRunner@1ed4004b]" name="setUpClass" is-config="true" duration-ms="242" started-at="2017-05-31T13:36:41Z" finished-at="2017-05-31T13:36:41Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testrunner.TestRunner@3159c4b8]" name="setUpClass" is-config="true" duration-ms="239" started-at="2017-05-31T16:54:04Z" finished-at="2017-05-31T16:54:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="beforeSetup(java.lang.String)[pri:0, instance:com.testrunner.TestRunner@1ed4004b]" name="beforeSetup" is-config="true" duration-ms="2498" started-at="2017-05-31T13:36:41Z" finished-at="2017-05-31T13:36:44Z">
+        <test-method status="PASS" signature="beforeSetup(java.lang.String)[pri:0, instance:com.testrunner.TestRunner@3159c4b8]" name="beforeSetup" is-config="true" duration-ms="2299" started-at="2017-05-31T16:54:04Z" finished-at="2017-05-31T16:54:06Z">
           <params>
             <param index="0">
               <value>
@@ -25,18 +25,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSetup -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@1ed4004b]" name="feature" duration-ms="177492" started-at="2017-05-31T13:36:44Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-05-31T13:39:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Buy Insurance Functionality]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@1ed4004b]" name="feature" duration-ms="60464" started-at="2017-05-31T13:39:41Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-05-31T13:40:42Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@3159c4b8]" name="feature" duration-ms="7350" started-at="2017-05-31T16:54:07Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-05-31T16:54:14Z">
           <params>
             <param index="0">
               <value>
@@ -47,7 +36,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@1ed4004b]" name="feature" duration-ms="9406" started-at="2017-05-31T13:40:42Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-05-31T13:40:51Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@3159c4b8]" name="feature" duration-ms="148003" started-at="2017-05-31T16:54:14Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-05-31T16:56:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Buy Insurance Functionality]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@3159c4b8]" name="feature" duration-ms="11233" started-at="2017-05-31T16:56:42Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-05-31T16:56:53Z">
           <params>
             <param index="0">
               <value>
@@ -57,10 +57,10 @@
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [Incorrect User-ID passowrd. You have]]]>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [You have entered an incorrect client id/email id/password to access ‘My Account’. You have 4 attempts left, post which, your access will get locked. After 4 attempts, kindly contact us at any of our touch points to unlock your access. You can reset your password using Forgot password option.]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [Incorrect User-ID passowrd. You have]
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [You have entered an incorrect client id/email id/password to access ‘My Account’. You have 4 attempts left, post which, your access will get locked. After 4 attempts, kindly contact us at any of our touch points to unlock your access. You can reset your password using Forgot password option.]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -88,23 +88,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-Caused by: java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [Incorrect User-ID passowrd. You have]
+Caused by: java.lang.AssertionError: expected [Incorrect User-ID password. You have] but found [You have entered an incorrect client id/email id/password to access ‘My Account’. You have 4 attempts left, post which, your access will get locked. After 4 attempts, kindly contact us at any of our touch points to unlock your access. You can reset your password using Forgot password option.]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:189)
 	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.pageobjects.LoginPage.enterLoginDetails(LoginPage.java:29)
-	at com.pagedefinitions.LoginPageStepDefinition.enterLoginDetails(LoginPageStepDefinition.java:18)
-	at ✽.And you enter valid "ashwin" and "karangutkar"(LoginFeature.feature:5)
+	at com.pageobjects.LoginPage.verifyLogin(LoginPage.java:37)
+	at com.pagedefinitions.LoginPageStepDefinition.check_whether_Login_Details_are_Correct(LoginPageStepDefinition.java:31)
+	at ✽.Then Check whether Login Details are Correct(LoginFeature.feature:7)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@1ed4004b]" name="feature" duration-ms="14289" started-at="2017-05-31T13:40:51Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-05-31T13:41:05Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@3159c4b8]" name="feature" duration-ms="6305" started-at="2017-05-31T16:56:53Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-05-31T16:56:59Z">
           <params>
             <param index="0">
               <value>
@@ -115,7 +115,7 @@ Caused by: java.lang.AssertionError: expected [Incorrect User-ID password. You h
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="shutDown(java.lang.String)[pri:0, instance:com.testrunner.TestRunner@1ed4004b]" name="shutDown" is-config="true" duration-ms="5073" started-at="2017-05-31T13:41:05Z" finished-at="2017-05-31T13:41:10Z">
+        <test-method status="PASS" signature="shutDown(java.lang.String)[pri:0, instance:com.testrunner.TestRunner@3159c4b8]" name="shutDown" is-config="true" duration-ms="5045" started-at="2017-05-31T16:56:59Z" finished-at="2017-05-31T16:57:04Z">
           <params>
             <param index="0">
               <value>
@@ -126,7 +126,7 @@ Caused by: java.lang.AssertionError: expected [Incorrect User-ID password. You h
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutDown -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testrunner.TestRunner@1ed4004b]" name="tearDownClass" is-config="true" duration-ms="17" started-at="2017-05-31T13:41:10Z" finished-at="2017-05-31T13:41:10Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testrunner.TestRunner@3159c4b8]" name="tearDownClass" is-config="true" duration-ms="8" started-at="2017-05-31T16:57:04Z" finished-at="2017-05-31T16:57:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -23,7 +23,7 @@ public class InsurancePlanPage {
 
 	}
 	 
-	 public void fillPersonalDetails() throws Exception  {
+	 public void fillPersonalDetails()  {
 		 
 		 GenericMethods.click(driver, ConstantLocators.buyOnlineButton, ConstantLocators.Xpath);
 		 GenericMethods.switchToWindow(driver);
@@ -47,6 +47,7 @@ public class InsurancePlanPage {
 		 GenericMethods.click(driver, ConstantLocators.choosePlanButton, ConstantLocators.Xpath);
 	     GenericMethods.waitFor(3000);
 		 GenericMethods.click(driver, ConstantLocators.choosePlanproceedButton, ConstantLocators.Xpath);
+	     GenericMethods.waitFor(3000);
 		 GenericMethods.click(driver, ConstantLocators.proceedToBuyButton, ConstantLocators.Xpath);
 
 	 }
@@ -101,5 +102,9 @@ public class InsurancePlanPage {
 
 	 }
 	 
+	 public void closeApplication()  {
+		 
+		 driver.quit();
 	 
+	 }
 }

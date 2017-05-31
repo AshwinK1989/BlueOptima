@@ -12,7 +12,7 @@ public class LoginPageStepDefinition extends WebSetup {
 	
 	
 	@And("^you enter valid \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void enterLoginDetails(String userName, String password) throws Throwable {
+	public void enterLoginDetails(String userName, String password) {
 
 		lp=new LoginPage(getDriver());
 		lp.enterLoginDetails(userName, password);
@@ -20,14 +20,16 @@ public class LoginPageStepDefinition extends WebSetup {
 	}
 	
 	@And("^Click on Login Button$")
-	public void click_on_Login_Button() throws Throwable {
+	public void click_on_Login_Button()  {
 	   
 		lp.clickOnLoginButton();
 	}
 
 	@Then("^Check whether Login Details are Correct$")
-	public void check_whether_Login_Details_are_Correct() throws Throwable {
+	public void check_whether_Login_Details_are_Correct()  {
 	   
 		lp.verifyLogin();
 	}
+	
+	
 }
