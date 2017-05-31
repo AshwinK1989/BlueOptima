@@ -10,9 +10,13 @@ Way to run the project:
 
 4) By default the test will run on chrome browser. Make sure you have chrome browser installed on your system.
 
-5) Steps of the tests can be found in folder: /Features/Charts.feature file. I have used cucumber for this assignment.
+5) Steps of the tests can be found in folder:Features. I have used cucumber for this assignment.
 
-6) Make sure you have Java, maven and TestNG installed.
+6) Make sure you have Eclipse, Java, maven,cucumber and TestNG installed.
 
 7) If you find any difficulties while running the test then please feel free to contact on 9820985636
+
+8) LoginFeature will fail as the validation message displayed on website is wrong.
+
+9) You can find result in file: index.html which is present in target/html folder.
 

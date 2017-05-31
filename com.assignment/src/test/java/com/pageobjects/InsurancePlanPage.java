@@ -44,7 +44,6 @@ public class InsurancePlanPage {
 	 public void choosePlan()  {
 		 
 		 GenericMethods.scrollDown(driver);
-		 //GenericMethods.scrollDown(driver);
 		 GenericMethods.click(driver, ConstantLocators.choosePlanButton, ConstantLocators.Xpath);
 	     GenericMethods.waitFor(3000);
 		 GenericMethods.click(driver, ConstantLocators.choosePlanproceedButton, ConstantLocators.Xpath);
