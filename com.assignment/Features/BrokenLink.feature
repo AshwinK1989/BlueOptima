@@ -8,5 +8,5 @@ Scenario Outline: To test the Broken Link
 	
 	Examples: 
 		| page                      |
-		#|https://www.hdfclife.com   |
+		|https://www.hdfclife.com   |
 		| http://www.lifexclusiv.com|
